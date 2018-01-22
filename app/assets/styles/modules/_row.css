@@ -1,0 +1,64 @@
+/* 12 column grid */
+.row {
+	
+	&::after {
+		content: "";
+		clear: both;
+		display: table;
+	}
+	
+	&--gutters > div {
+		padding: 0 10px 0 10px;
+		box-sizing: border-box;
+	}
+	
+	&--r-border {
+		@mixin atLarge {
+			border-right: 5px solid $mainOrange;
+			box-sizing: border-box;
+		}
+	}
+	
+	&--fixed-left {
+		@mixin atLarge {
+			position: fixed;
+			left: 0;
+			top: 0;
+			height: 100vh;
+			overflow-Y: scroll;
+			overflow: auto;
+		}
+	}
+	
+	&--flow-right {
+		@mixin atLarge {
+			position: absolute;
+			right: 0;
+			top: 0;
+		}
+	}
+	
+	&__4 {
+		@mixin atLarge {
+			float: left;
+			width: 33%;
+			
+			
+		}
+	}
+	
+	&__6 {
+		@mixin atLarge {
+			float: left;
+			width: 50%;
+		}
+	}
+	
+	&__8 {
+		@mixin atLarge {
+			float: left;
+			width: 66%;
+		}
+	}
+	
+}

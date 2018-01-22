@@ -1,0 +1,114 @@
+.list {
+	
+	&--t-padding {
+		padding-top: 40px;
+	}
+	
+	&--pointless {
+		list-style: none;
+		padding-left: 0;
+		font-size: inherit;
+	}
+	
+	&__wrapper {
+		display: block;
+		width: 100%;
+		margin: 0 auto 0 auto;
+		box-sizing: border-box;
+		
+		@mixin atSmall {
+			width: 70%;
+		}
+		
+		@mixin atMedium {
+			width: 70%;
+		}
+		
+		@mixin atLarge {
+			width: 70%; 
+		}
+		
+		&--narrow {
+			
+			@mixin atLarge {
+				width: 300px;
+			}
+		}
+		
+		&__title {
+			background-color: $mainOrange;
+			width: 100%;
+			margin: 0;
+			padding: 10px 0 10px 0;
+			font-weight: 300;
+			text-align: left;
+			padding-left: 10px;
+			box-sizing: border-box;
+			color: #efefef;
+		}
+	}
+	
+	&--square {
+		line-height: 1.75rem;
+		text-align: left;
+		margin: auto;
+		width: 100%;
+		background-color: lightgrey;
+		padding-left: 10px;	
+		
+		& ul {
+			margin: 0 auto 0 auto;
+		}
+	}
+	
+	&--images {
+		&{
+			padding-left: 0;
+			background-color: lightgrey;
+			transition: 0.3s;
+			margin: 0;
+		}
+		
+		* {margin: 0; padding: 0;}
+
+		div {
+		  margin: 20px;
+		}
+
+		ul {
+		  list-style-type: none;
+		}
+		
+		li h3 {
+			padding-top: 10px;
+			line-height: 1.6rem;
+		}
+
+		li img {
+		  float: left;
+		  margin: 0 15px 0 0;
+		  width: 150px;
+		  height: 150px;
+		}
+
+		li p {
+		  padding: 10px;
+		  line-height: 1.5rem;
+		}
+
+		li {
+		  overflow: auto;
+		  display: block;
+		  width: 100%;
+		  text-align: left;
+		  transition: 0.3s;
+		}
+		@mixin atLarge { 
+			li:hover {
+				background: white; 
+				transition: 0.3s;
+				transform: scale(1.1);
+			}
+		}
+	}		
+}

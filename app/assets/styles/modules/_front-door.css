@@ -1,0 +1,21 @@
+.front-door {
+	text-align: center;
+	
+	@mixin atSmall {
+		width: 100vw;
+	}
+	
+	&__greeting {
+		font-size: 3rem;
+		transition: 0.3s;
+	}
+	
+	&__description {
+		padding: 15px 0 15px 0 ;
+		font-size: 1.5rem;
+		
+		@mixin atLarge {
+			font-size: 1.25rem;
+		}
+	}
+}

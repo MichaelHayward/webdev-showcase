@@ -1,0 +1,152 @@
+.menu {
+	&__button {
+		cursor: pointer;
+		width: 70px;
+		height: 70px;
+		background-color: $mainOrange;
+		margin: 0 auto 0 auto;
+		position: relative;
+		
+		@mixin atMedium {
+			
+		}
+		
+		&::before {
+			content: "";
+			position: absolute;
+			top: 50%;
+			transform: translateY(-400%);
+			left: 15px;
+			width: 40px;
+			height: 4px;
+			background-color: #FFF;
+			transform-origin: 0 0;
+			transition: transform .3s ease-out;
+		}
+		
+		&__middle {
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			left: 15px;
+			width: 40px;
+			height: 4px;
+			background-color: #FFF;
+			transition: all .3s ease-out;
+			transform-origin: 0 50%;
+		}
+		
+		&::after {
+			content: "";
+			position: absolute;
+			top: 50%;
+			transform: translateY(280%);
+			left: 15px;
+			width: 40px;
+			height: 4px;
+			background-color: #FFF;
+			transform-origin: 0 100%;
+			transition: transform .3s ease-out;
+		}
+		
+		&--close-x {
+			z-index: 100;
+			position: fixed;
+			top: 10px;
+			right: 10px;
+			
+			@mixin atMedium {
+				position: relative;
+				top: 0;
+				right: 0;
+			}
+			
+			&::before {
+				transform: translateY(-440%) translateX(8%) rotate(45deg) scaleX(1.25);
+			}
+			
+			.menu__button__middle {
+				opacity: 0;
+				transform: scaleX(0);
+			}
+			
+			&::after {
+				transform: translateY(410%) translateX(8%) rotate(-45deg) scaleX(1.25);
+			}
+		}
+	}
+	
+	&__content {
+		background-color: rgba(255, 255, 255, 0.9);
+		position: fixed;
+		top: 0; right: 0; bottom: 0; left: 0;
+		width: 100%;
+		padding-top: 40px;
+		z-index: 100;
+		visibility: hidden;
+		display: none;
+		color: #efefef;
+		transition: 0.3s;
+		
+		@mixin atSmall {
+			
+		}
+		
+		@mixin atMedium{
+			position: absolute;
+			padding-top: 250px;
+			border-bottom: 0;
+			border-bottom: 8px solid $mainOrange;
+		}
+		
+		@mixin atLarge {
+			border-bottom: 0px;
+		}
+		
+		&--is-visible {
+			visibility: visible;
+			display: initial;
+		}
+		
+		&__tile {
+			background-color: $mainOrange;
+			width: 70%;
+			padding: 15px;
+			margin: 15px auto 15px auto;
+			
+			@mixin atMedium {
+				margin: 50px auto 50px auto;
+				padding: 25px;
+			}
+		}
+		
+		&__contact {
+			width: 100%;
+			display: block;
+			padding-top: 50px;
+			
+			@mixin atMedium {
+				padding-top: 0px;
+			}
+			
+			&__text{
+				margin-top: 0;
+			}
+			
+			&__email {
+				font-size: 0.8rem;
+				color: #efefef;
+				
+				@mixin atMedium {
+					font-size: 1rem;
+				}
+			}
+			
+			&__phone-number {
+				font-weight: 300;
+				font-size: 1.25rem;
+				color: #efefef;
+			}
+		}
+	}
+}

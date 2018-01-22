@@ -1,0 +1,56 @@
+body {
+	font-family: Montserrat;
+	background-color: #efefef;
+}
+
+a {
+	text-decoration: none;
+	color: $mainOrange;
+	font-weight: 600;
+	border-bottom: 2px dashed $mainOrange;
+	transition: 0.3s;
+	
+	&:visited {
+		color: $mainOrange;
+	}
+}
+
+p {
+	line-height: 1.45;
+	font-size: 1.2rem;
+}
+
+code {
+	background-color: lightgrey;
+}
+
+.orange {
+	color: $mainOrange;
+}
+
+.at-medium-square-text {
+	font-size: 1.25rem;
+	line-height: 2rem;
+	padding: 15px 0 15px 0;
+	text-align: left;
+	
+	/*@mixin atSmall {
+		width: 70%;
+		margin: auto;
+	}*/
+	
+	@mixin atSmall {
+		display: block;
+		width: 70%;
+		text-align: justify;
+		margin: auto;
+	}
+}
+
+.left-float {
+	float: left;
+}
+
+.t-padding {
+	padding-top: 50px;
+}

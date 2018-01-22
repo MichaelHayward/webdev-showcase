@@ -1,0 +1,10 @@
+.sub-heading {
+	font-size: 1.75rem;
+	text-align: center;
+	padding-bottom: 10px;
+	
+	@mixin atMedium {
+		font-size: 2rem;
+		text-align: left;
+	}
+}
