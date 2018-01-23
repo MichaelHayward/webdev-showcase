@@ -1,0 +1,21 @@
+.intro-fade {
+	position: fixed;
+	z-index: 100;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	
+	background-color: white;
+	visibility: visible;
+	
+	animation: intro-fading 1.0s forwards;
+	animation-timing-function: ease-out;
+}
+
+@keyframes intro-fading {
+	0%		{visibility: visible;
+			opacity: 1;}
+	100%	{visibility: hidden;
+			opacity: 0;}
+}

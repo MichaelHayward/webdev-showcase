@@ -1043,3 +1043,35 @@ template {
 .icon__link {
 		height: auto;
 	}
+
+.intro-fade {
+	position: fixed;
+	z-index: 100;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	
+	background-color: white;
+	visibility: visible;
+	
+	-webkit-animation: intro-fading 1.0s forwards;
+	
+	        animation: intro-fading 1.0s forwards;
+	-webkit-animation-timing-function: ease-out;
+	        animation-timing-function: ease-out;
+}
+
+@-webkit-keyframes intro-fading {
+	0%		{visibility: visible;
+			opacity: 1;}
+	100%	{visibility: hidden;
+			opacity: 0;}
+}
+
+@keyframes intro-fading {
+	0%		{visibility: visible;
+			opacity: 1;}
+	100%	{visibility: hidden;
+			opacity: 0;}
+}
