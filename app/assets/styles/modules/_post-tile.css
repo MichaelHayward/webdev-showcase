@@ -1,0 +1,25 @@
+.post-tile {
+	&__container {
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		width: 100%;
+	}
+	
+	/*border: 1px solid black; /* testing */
+	background-color: #efefef;
+	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
+	padding: 10px;
+	margin-bottom: 30px;
+	
+	@mixin atLarge {
+		width: 350px;
+		margin: 20px;
+	}
+	
+	& img {
+		display: block;
+		height: 100px;
+		margin: auto;
+	}
+}

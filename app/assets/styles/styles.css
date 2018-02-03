@@ -8,9 +8,16 @@
 @import "modules/_about.css";
 @import "modules/_wrapper.css";
 @import "modules/_caption-tile.css";
-@import "modules/_site-footer.css";
 @import "modules/_sub-heading.css";
 @import "modules/_quotation-box.css";
 @import "modules/_menu.css";
 @import "modules/_icon.css";
 @import "modules/_intro-fade.css";
+@import "modules/_face-to-name.css";
+@import "modules/_my-work.css";
+@import "modules/_color.css";
+@import "modules/_page-header.css";
+@import "modules/_post-tile.css";
+@import "modules/_blog-post.css";
+@import "modules/_removable-panel.css";
+@import "modules/_industries-list.css";

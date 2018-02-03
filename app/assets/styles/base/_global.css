@@ -5,14 +5,10 @@ body {
 
 a {
 	text-decoration: none;
-	color: $mainOrange;
+	color: $mainColorOne;
 	font-weight: 600;
-	border-bottom: 2px dashed $mainOrange;
+	border-bottom: 2px dashed $mainColorOne;
 	transition: 0.3s;
-	
-	&:visited {
-		color: $mainOrange;
-	}
 }
 
 p {
@@ -24,8 +20,31 @@ code {
 	background-color: lightgrey;
 }
 
-.orange {
-	color: $mainOrange;
+.title-font {
+	font-family: 'Shrikhand';
+	font-weight: 300;
+}
+
+.centered {
+	text-align: center;
+}
+
+.patterned {
+	background-image: url('../../assets/images/svg/pattern.svg');
+}
+
+.patterned-reverse {
+	background-image: url('../../assets/images/svg/pattern-reverse.svg');
+	background-repeat: repeat;
+}
+
+.patterned-before-large {
+	background-image: url('../../assets/images/svg/pattern.svg');
+	background-repeat: repeat;
+	
+	@mixin atLarge {
+		background-image: none;
+	}
 }
 
 .at-medium-square-text {
@@ -53,4 +72,16 @@ code {
 
 .t-padding {
 	padding-top: 50px;
+}
+.top-margin {
+	margin-top: 100px;
+}
+.bottom-margin {
+	margin-bottom: 100px;
+}
+.left-side {
+	@mixin atLarge {
+		background-color: ; 
+	}
+	 
 }

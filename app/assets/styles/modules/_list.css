@@ -1,7 +1,7 @@
 .list {
 	
 	&--t-padding {
-		padding-top: 40px;
+		padding-top: 100px;
 	}
 	
 	&--pointless {
@@ -13,10 +13,10 @@
 	&__wrapper {
 		display: block;
 		width: 100%;
-		margin: 0 auto 0 auto;
+		margin: 0px auto 0px auto;
 		box-sizing: border-box;
 		
-		@mixin atSmall {
+		/*@mixin atSmall {
 			width: 70%;
 		}
 		
@@ -26,17 +26,30 @@
 		
 		@mixin atLarge {
 			width: 70%; 
-		}
+		}*/
 		
 		&--narrow {
+			width: 300px;
+			
+			@mixin atSmall {
+				width: 300px;
+				margin-bottom: 50px;
+				margin-top: 50px;
+			}
 			
 			@mixin atLarge {
-				width: 300px;
+				/*width: 90%;*/
+				margin: 0px auto 0px auto;
 			}
+			
+		}
+		
+		&--lefted {
+			margin: 0;
 		}
 		
 		&__title {
-			background-color: $mainOrange;
+			background-color: $mainColorOne;
 			width: 100%;
 			margin: 0;
 			padding: 10px 0 10px 0;
@@ -54,11 +67,20 @@
 		margin: auto;
 		width: 100%;
 		background-color: lightgrey;
-		padding-left: 10px;	
+		border-spacing: 0;
 		
 		& ul {
 			margin: 0 auto 0 auto;
 		}
+		
+		& td {
+			padding-left: 10px;
+		}
+		
+		tr:nth-child(even) {
+			background-color: #c7c7c7;
+		}
+		
 	}
 	
 	&--images {

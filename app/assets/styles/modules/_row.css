@@ -14,7 +14,7 @@
 	
 	&--r-border {
 		@mixin atLarge {
-			border-right: 5px solid $mainOrange;
+			border-right: 5px solid $mainColorOne;
 			box-sizing: border-box;
 		}
 	}
@@ -38,12 +38,18 @@
 		}
 	}
 	
+	&__3 {
+		@mixin atLarge {
+			float: left;
+			width: 25%;
+		}
+		
+	}
+	
 	&__4 {
 		@mixin atLarge {
 			float: left;
 			width: 33%;
-			
-			
 		}
 	}
 	
@@ -57,7 +63,14 @@
 	&__8 {
 		@mixin atLarge {
 			float: left;
-			width: 66%;
+			width: 67%;
+		}
+	}
+	
+	&__10 {
+		@mixin atLarge {
+			float: left;
+			width: 83.3%;
 		}
 	}
 	

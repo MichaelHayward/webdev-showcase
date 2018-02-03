@@ -2,12 +2,11 @@
 	background: lightgrey;
 	line-height: 3rem;
 	font-size: 1.2rem;
-	border-left: 7px solid $mainOrange;
+	border-left: 7px solid $mainColorOne;
 	margin-bottom: 50px;
+	max-width: 700px;
 	
 	@mixin atMedium {
-		width: 70%;
-		margin: auto;
 		margin-top: 100px;
 		margin-bottom: 100px;
 	}
@@ -19,7 +18,7 @@
 	}
 	
 	&__source{
-		color: $mainOrange;
+		color: $mainColorOne;
 		text-align: right;
 		padding: 10px;
 		margin: 0;
@@ -40,6 +39,6 @@
 		width:  100%;
 		height: 50px;
 		font-family: serif;
-		background-color: $mainOrange;
+		background-color: $mainColorOne;
 	}
 }

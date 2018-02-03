@@ -10377,9 +10377,9 @@ var MenuModal = function () {
 	_createClass(MenuModal, [{
 		key: 'events',
 		value: function events() {
-
 			this.menuButton.click(this.toggleTheMenu.bind(this));
 			this.menuButton.click(this.populateContact());
+			this.menuContent.click(this.closeTheMenu.bind(this));
 		}
 	}, {
 		key: 'toggleTheMenu',
@@ -10388,12 +10388,18 @@ var MenuModal = function () {
 			this.menuButton.toggleClass('menu__button--close-x');
 		}
 	}, {
+		key: 'closeTheMenu',
+		value: function closeTheMenu() {
+			this.menuContent.removeClass('menu__content--is-visible');
+			this.menuButton.removeClass('menu__button--close-x');
+		}
+	}, {
 		key: 'populateContact',
 		value: function populateContact() {
-			this.contactEmail.html('mike' + 'hayward' + '07' + '@' + 'hotmail' + '.co' + '.uk');
-			this.contactEmail.attr('href', 'mailto:mikehayward07@hotmail.co.uk');
+			this.contactEmail.html('mike' + 'builds' + 'websites' + '@' + 'gmail' + '.co' + 'm');
+			this.contactEmail.attr('href', 'mailto:mikebuildswebsites@gmail.com');
 			this.contactPhoneNumber.html('0' + '7' + '8' + '5' + '8' + '7' + '5' + '0' + '2' + '3' + '8');
-			this.contactPhoneNumber.attr('href', 'tel:07858750238');
+			this.contactPhoneNumber.attr('href', 'tel:+44 7858750238');
 		}
 	}]);
 

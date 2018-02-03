@@ -1,0 +1,72 @@
+.color {
+	
+	&__text{
+		&--white {
+			color: #efefef;
+		}
+		&--default{
+			color: #1c1c1c;
+		}
+		&--one{
+			color: #FA5F62;
+		}
+		&--two{
+			color: #F3E0B7;
+		}
+		&--three{
+			color: #709062; /* Darker version of three for easier reading */
+			
+			& a:visited {
+				color: #709062;
+			}
+		}
+		&--four{
+			color: #29ACAE;
+		}
+		&--five{
+			color: #1b4967;
+		}
+	}
+	
+	&__background{
+		&--default {
+			background-color: #efefef;
+		}
+		&--one{
+			background-color: #FA5F62;
+		}
+		&--two{
+			background-color: #F3E0B7;
+		}
+		&--three{
+			background-color: #9FD089;
+		}
+		&--four{
+			background-color: #29ACAE;
+		}
+		&--five{
+			background-color: /*#16384E*/ #1b4967;
+		}
+	}
+	
+	&__border{
+		&--default {
+			border-color: #efefef;
+		}
+		&--one{
+			border-color: #FA5F62;
+		}
+		&--two{
+			border-color: #F3E0B7;
+		}
+		&--three{
+			border-color: #9FD089;
+		}
+		&--four{
+			border-color: #29ACAE;
+		}
+		&--five{
+			border-color: #1b4967;
+		}
+	}
+}

@@ -1,0 +1,78 @@
+.face-to-name {
+	&__image-container {
+		margin-left: auto;
+		height: inherit;
+		box-sizing:border-box;
+	}
+	
+	&__image {
+		height: 300px;
+		border-radius: 40%;
+		background-color: $mainColorOne;
+		display: block;
+		box-sizing:border-box;
+		margin: auto;
+		margin-bottom: 50px;
+		margin-top: 50px;
+		box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+	}
+	
+	&__menu {
+		list-style-type: none;
+		display: block;
+		display: flex;
+		justify-content: flex-start;
+		flex-direction: row;
+		margin: 0 10px 0 10px;
+		box-sizing: border-box;
+		padding-left: 0px;
+		padding-top: 50px;
+		padding-bottom: 50px;
+		
+		@mixin atLarge {
+			width: 70px;
+			flex-direction: column;
+			position: fixed;
+			top: 0px;
+			left: 33%;
+			text-align: left;
+			padding-top: 0;
+			padding-bottom: 0;
+			margin: 0;
+		}
+		
+		& a {
+			border-bottom: none;
+		}
+		
+		& li {
+			display: block;
+			margin: auto;
+			margin-top: 0px;
+			margin-bottom: 10px;
+			width: 70px;
+		}
+		
+		&__icon {
+			display: inline-block;
+			width: 70px;
+			height: 70px;
+			background-color: $mainColorOne;
+			margin-bottom: 5px;
+			transition: 0.5s;
+			position: relative;
+			
+			& img {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+			
+			&:hover {
+				background-color: rgba(0, 0, 0, 0.5);
+			}
+		}
+	}
+	
+}

@@ -23,3 +23,9 @@
 		display: table;
 	}
 }
+
+@define-mixin atMobile {
+	@media (max-width: 1009px) {
+		@mixin-content
+	}
+}

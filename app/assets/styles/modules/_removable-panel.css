@@ -1,0 +1,5 @@
+.removable-panel {
+	@mixin atMobile {
+		display: none;
+	}
+}
