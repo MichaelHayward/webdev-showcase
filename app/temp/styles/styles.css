@@ -834,6 +834,13 @@ template {
 }
 	}
 
+@media (min-width: 1010px) {
+
+.wrapper {
+		padding-left: 70px
+}
+	}
+
 .caption-tile {
 	margin: 0 20px 0 0;
 	width: 100%;
@@ -1420,18 +1427,28 @@ template {
 	display: flex;
 	-ms-flex-wrap: wrap;
 	    flex-wrap: wrap;
-	-webkit-box-pack: start;
-	    -ms-flex-pack: start;
-	        justify-content: flex-start;
 	text-align: center;
 	padding-left: 0px;
+	padding-bottom: 50px;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 }
+
+@media (min-width: 800px) {
+
+.industries-list {
+		-webkit-box-pack: start;
+		    -ms-flex-pack: start;
+		        justify-content: flex-start
+}
+	}
 
 .industries-list li {
 		display: block;
 		width: 150px;
 		height: 100px;
-		margin: 5px auto 5px auto;
+		margin: 1px;
 		padding-top: 10px;
 		position: relative;
 		border-radius: 2px;
@@ -1442,6 +1459,7 @@ template {
 @media (min-width: 800px) {
 
 .industries-list li {
+			margin: 5px;
 			margin: 5px
 	}
 	}
@@ -1460,3 +1478,19 @@ template {
 			        transform: translate(-50%, -50%);
 			padding-top: 35px;
 		}
+
+@media (min-width: 1010px) {
+
+.atLarge-spacer {
+		padding-top:25vh;
+		padding-bottom: 25vh
+}
+	}
+
+@media (min-width: 530px) {
+
+.atLarge-spacer {
+		padding-top: 10vh;
+		padding-bottom: 10vh
+}
+	}

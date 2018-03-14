@@ -1,0 +1,11 @@
+.atLarge-spacer {
+	@mixin atLarge {
+		padding-top:25vh;
+		padding-bottom: 25vh;
+	}
+	
+	@mixin atSmall {
+		padding-top: 10vh;
+		padding-bottom: 10vh;
+	}
+}
